@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- character meta data, webpage title and link to the CSS external style guide. -->
+        <meta charset = "UTF-8">
+        <title>Chris Smit CV</title>
+        <link href = "styleguide.css" rel = "stylesheet" type = "text/css">
+
+    </head>
+
+    <body>
+
+        <!-- Adding entire body into a grid consisting of two columns, one column bring wider for the main
+        string of info including work experience. -->
+        <!-- Looked into flex boxed but eventually used the grid instead due to ease of use, got info from here:
+        https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columnshttps://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns -->
+        <div class = "grid">
+            <div>
+
+                <!-- Narrow column side 'section' consisting of my photo, a short description and personal &
+                contact info. -->
+                <section>
+
+                    <br><br><br>
+
+                    <!-- My photo, researched image resizing from here:
+                    https://www.w3schools.com/html/html_images.asp
+                    and here:
+                    https://stackoverflow.com/questions/40797433/how-to-move-an-image-upwards-in-html-css -->
+                    <img src = "images/headshot.jpg"
+                        width = "200"
+                        height = "260"
+                         alt = "headshot"><br><br><br><br>
+
+                    <!-- Short description of my skills. -->
+                    <h3>Professional Skills</h3>
+                    <p>Highly skilled in an array of technical fields and managing a team on a senior level.</p>
+                    <p>Able to problem solve technical issues while working under pressure with a team.</p>
+                    <p>Following my passion for technical puzzles by branching out into Software Development.</p><br><br><br>
+
+                    <!-- Some personal details. -->
+                    <h3>Personal Details</h3>
+                    <p style = "color: #29627e;"><b>DOB: 01-Feb-1985</b></p>
+                    <p style = "color: #29627e;"><b>Nationality: South-African</b></p>
+                    <p style = "color: #29627e;"><b>Location: Dubai, UAE</b></p><br><br><br>
+
+                    <!-- contact info embedded with id tags to implement styling. -->
+                    <h3>Contact</h3>
+
+                    <!-- Made the contact widget images float next to the related text and sized them accordingly. -->
+                    <div id = "widget">
+                        <img src = "images/email.jpg"
+                            width = "28"
+                            height = "28"
+                             alt = "email icon">
+                    </div>
+                    <p style = "color: #29627e;"><b>jclsmit@gmail.com</b></p>
+
+                    <div id = "widget">
+                        <img src = "images/github.jpg"
+                             width = "28"
+                             height = "28"
+                             alt = "github icon">
+                    </div>
+                    <p style = "color: #29627e;"><b><a href = "https://github.com/pavlovskhat">gitHub</a></b></p>
+
+                    <div id = "widget">
+                        <img src = images/linkedin.jpg"
+                             width = "28"
+                             height = "28"
+                             alt = "linkedin icon">
+                    </div>
+                    <p style = "color: #29627e;"><b><a href = "https://www.linkedin.com/in/chris-smit-8a24b891/">linkedIn</a></b></p>
+
+                </section>
+            </div>
+
+            <div>
+                <!-- Main info string on bigger column. -->
+                <main>
+
+                    <!-- Header placed within top of main data column. Class tag on heading name to enlarge the font. -->
+                    <!-- Checked font sizing from here:
+                    https://www.tutorialspoint.com/How-to-change-font-size-in-HTML -->
+                    <header>
+                        <div class = "heading_name">
+                            <p><b>Chris Smit</b></p>
+                        </div>
+
+                        <!-- In line CSS styling to change the font colour. -->
+                        <!-- For in line styling had to check exactly how from here:
+                        https://www.w3schools.com/Css/css_inline-block.asp -->
+                        <h1 style = "color: #29627e;">Software Engineer</h1>
+                    </header>
+
+                    <br><br><br>
+
+                    <!-- Remainder of info not classified as heading placed in article. -->
+                    <article>
+
+                        <!-- Work experience. -->
+                        <h3>Professional Experience</h3>
+
+                            <ul>
+                                <!-- Job titles in line CSS styling to change font colour. -->
+                                <li style = "color: #29627e;"><b>Freelance Software Engineer</b></li>
+
+                                    <!-- Employment dates given id tags for special formatting. -->
+                                    <div id = "date">
+                                        <p><b>Jul 2021 - Present</b></p>
+                                    </div>
+
+                                    <p><b>SELF</b></p>
+
+                                    <!-- Used new '<p>' lines instead of '<br>' as the spacing looked better. -->
+                                    <p>Skillful in writing applications in Java and Python that interact with SQL databases.</p>
+                                    <p>Proficient in debugging, testing, refactoring and working with object orientated programming.</p>
+                                    <p>Knowledge of version control, through working with git and gitHub.</p><br>
+
+                                    <p>Programs I have written include a task organizer using Python and a project management</p>
+                                    <p>Application using Java that interacts with a database on mySQL.</p><br>
+
+                                <!-- Links to my two biggest projects in Python and Java, in line font colour styling. -->
+                                <p style = "color: #29627e;"><b><a href="https://github.com/pavlovskhat/python_capstone_4">Task Organizer using Python</a></b></p>
+                                <p style = "color: #29627e;"><b><a href="https://github.com/pavlovskhat/PoisedPMD">Project Management App using Java</a></b></p><br><br>
+
+                                <li style = "color: #29627e;"><b>Head of Warehouse and Logistics</b></li>
+
+                                    <div id = "date">
+                                        <p><b>Feb 2015 - Feb 2021</b></p>
+                                    </div>
+
+                                    <p><b>GL - events ME</b></p>
+
+                                    <p>Managed the Middle East region logistics and warehousing which consisted of 3 depots for</p>
+                                    <p>various commodities related to temporary structures within the events field. Logistics included</p>
+                                    <p>moving an average 10 - 20 containers (return) per international event.</p><br>
+
+                                    <p> Senior Project Lead on multiple leading international projects throughout my tenure. Chief</p>
+                                    <p>accomplishments include successfully serving as Project Director for the '2020 Dakar KSA' and</p>
+                                    <p>Senior Project Manager for the '2019 Asian Games' in Jakarta Indonesia.</p><br>
+
+                                    <p>Currently working on an advisory capacity until I find a permanent role in Software.</p><br><br>
+
+                            </ul>
+
+                        <!-- Education history with in line colour styling. -->
+                        <h3>Education</h3>
+
+                            <ul>
+
+                                <li><h4 style = "color: #29627e;">HyperionDev</h4></li>
+                                    <p><b>Software Engineering May - Aug 2022</b></p>
+
+                                <br>
+
+                                <li><h4 style = "color: #29627e;">Nelson Mandela Metropolitan University</h4></li>
+                                    <p><b>Architecture 2003 - 2007</b></p><br><br><br>
+
+                            </ul>
+
+                        <!-- Special format tag for salary, had to push it up to line it up with certifications. -->
+                        <div id = "salary">
+
+                            <h3>Salary Expectations</h3>
+
+                                <ul>
+                                    <li>AED 20,000.00 monthly</li>
+                                </ul>
+
+                        </div>
+
+                        <h3>Certifications</h3>
+
+                            <ul>
+                                <li>Software Engineering Bootcamp</li>
+                            </ul>
+
+                    </article>
+
+                </main>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

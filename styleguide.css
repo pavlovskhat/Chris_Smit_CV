@@ -1,0 +1,47 @@
+<style type = "text/css">
+
+    body {
+        font-family: Arial;
+    }
+
+    main {
+        margin-left: 50px;
+        padding-left: 50px;
+        box-shadow: inset 10px 0 6px -5px #29627e;
+        }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 250px 2fr;
+        font-family: Arial;
+        }
+
+    .headshot {
+        padding left: 15px;
+        margin left: 25px;
+        float: left;
+        }
+
+    .heading_name {
+        font-size: 60px;
+        }
+
+    #widget {
+        float: left;
+        position: relative;
+        top: -5px;
+    }
+
+    #date {
+        float: right;
+        padding-right: 850px;
+    }
+
+    #salary {
+        float: right;
+        padding-right: 850px;
+        position: relative;
+        top: -15px;
+    }
+
+</style>
